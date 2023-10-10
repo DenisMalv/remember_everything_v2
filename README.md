@@ -1,2 +1,2 @@
-# remember_everything_v2
-redux
+# goit-react-hw-02-phonebook
+#2
