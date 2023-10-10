@@ -1,2 +1,2 @@
-# goit-react-hw-02-phonebook
-#2
+# Remember redux
+
