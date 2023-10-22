@@ -8,6 +8,7 @@ import Counter from './Counter/Counter';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact, deleteContact } from 'redux/contacts/contactsSlice';
 import { nanoid } from '@reduxjs/toolkit';
+import News from './News/News';
 
 const App = () => {
   // const [contacts, setContacts] = useState([
@@ -73,7 +74,7 @@ const App = () => {
 
   return (
     <main>
-      <h1 className="titlePhonebook">Phonebook</h1>
+      {/* <h1 className="titlePhonebook">Phonebook</h1>
       <ContactForm onSubmit={handleAddContact} />
 
       <h2 className="titleContacts">Contacts</h2>
@@ -82,7 +83,8 @@ const App = () => {
         contacts={getFilteredContacts()}
         deleteContact={handleDeleteContact}
       />
-      <Counter/>
+      <Counter/> */}
+      <News/>
     </main>
   );
   // }
