@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import propTypes from 'prop-types';
 import css from './contactForm.module.css';
-import { addContact } from 'redux/contacts/contactsSlice';
-import { useDispatch } from 'react-redux';
 
 const ContactForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
@@ -25,6 +23,7 @@ const ContactForm = ({ onSubmit }) => {
     event.preventDefault();
     onSubmit({ name, number });
     reset();
+    console.log({ name, number });
   };
 
   const reset = () => {
